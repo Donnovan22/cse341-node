@@ -1,23 +1,19 @@
 {
-  "name": "cse341-apicourse-code",
+  "name": "cse341-node-course",
   "version": "1.0.0",
-  "description": "code to give to students for the cse341 course",
+  "description": "Building API with Node.js",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "devStart": "nodemon server.js",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nathanbirch/cse341-apiCourse-code.git"
+    "url": "https://github.com/Donnovan22/cse341-node"
   },
-  "author": "Nathan Birch",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nathanbirch/cse341-apiCourse-code/issues"
-  },
-  "homepage": "https://github.com/nathanbirch/cse341-apiCourse-code#readme",
+  "author": "Emanuel Valencia",
+  "license": "UNLICENSED",
+  
   "dependencies": {
     "express": "^4.17.3"
   },
