@@ -1,0 +1,33 @@
+// LOCAL HOST
+
+###
+GET http://localhost:3000
+###
+GET http://localhost:3000/names
+###
+GET http://localhost:3000/names/test
+###
+GET http://localhost:3000/contacts
+###
+GET http://localhost:3000/contacts/63c4d9514acd17fd60937bf2
+###
+GET http://localhost:3000/contacts/63c4d9514acd17fd60937bf3
+###
+GET http://localhost:3000/contacts/63c4d9514acd17fd60937bf4
+
+// PRODUCTION DEPLOY
+
+###
+GET https://cse-341-donnovan.onrender.com
+###
+GET https://cse-341-donnovan.onrender.com/names
+###
+GET https://cse-341-donnovan.onrender.com/names/test
+###
+GET https://cse-341-donnovan.onrender.com/contacts
+###
+GET https://cse-341-donnovan.onrender.com/contacts/63c4d9514acd17fd60937bf2
+###
+GET https://cse-341-donnovan.onrender.com/contacts/63c4d9514acd17fd60937bf3
+###
+GET https://cse-341-donnovan.onrender.com/contacts/63c4d9514acd17fd60937bf4
