@@ -1,4 +1,4 @@
-// LOCAL HOST
+// LOCAL HOST //
 
 ###
 GET http://localhost:3000
@@ -15,7 +15,38 @@ GET http://localhost:3000/contacts/63c4d9514acd17fd60937bf3
 ###
 GET http://localhost:3000/contacts/63c4d9514acd17fd60937bf4
 
-// PRODUCTION DEPLOY
+// CREATE CONTACT
+###
+POST http://localhost:3000/contacts
+content-type: application/json
+
+{
+"firstName":"Carl", 
+"lastName":"McDonald",
+"email":"carlMc@gmail.com",
+"favoriteColor":"purple",
+"birthday":"01/09/1983"
+}
+
+// UPDATE CONTACT
+###
+PUT  http://localhost:3000/contacts/63ccd082b3fcc85a81469291
+content-type: application/json
+
+{
+"firstName":"Carl", 
+"lastName":"McDonald",
+"email":"carlMcDonald@gmail.com",
+"favoriteColor":"green",
+"birthday":"01/09/1983"
+}
+
+// DELETE CONTACT BY ID
+###
+DELETE http://localhost:3000/contacts/63ccd082b3fcc85a81469291
+
+
+// *** PRODUCTION DEPLOY *** //
 
 ###
 GET https://cse-341-donnovan.onrender.com
@@ -61,4 +92,4 @@ content-type: application/json
 
 // DELETE CONTACT BY ID
 ###
-DELETE https://cse-341-donnovan.onrender.com/contacts/63ccc7eb1f499a29fb315abf
+DELETE https://cse-341-donnovan.onrender.com/contacts/63cccd0fd44fa5dd474c902e
