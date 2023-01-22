@@ -31,3 +31,34 @@ GET https://cse-341-donnovan.onrender.com/contacts/63c4d9514acd17fd60937bf2
 GET https://cse-341-donnovan.onrender.com/contacts/63c4d9514acd17fd60937bf3
 ###
 GET https://cse-341-donnovan.onrender.com/contacts/63c4d9514acd17fd60937bf4
+
+
+// CREATE CONTACT
+###
+POST https://cse-341-donnovan.onrender.com/contacts
+content-type: application/json
+
+{
+"firstName":"Carl", 
+"lastName":"McDonald",
+"email":"carlMc@gmail.com",
+"favoriteColor":"purple",
+"birthday":"01/09/1983"
+}
+
+// UPDATE CONTACT
+###
+PUT  https://cse-341-donnovan.onrender.com/contacts/63ccc7eb1f499a29fb315abf
+content-type: application/json
+
+{
+"firstName":"Carl", 
+"lastName":"McDonald",
+"email":"carlMcDonald@gmail.com",
+"favoriteColor":"green",
+"birthday":"01/09/1983"
+}
+
+// DELETE CONTACT BY ID
+###
+DELETE https://cse-341-donnovan.onrender.com/contacts/63ccc7eb1f499a29fb315abf
